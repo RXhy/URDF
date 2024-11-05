@@ -155,6 +155,18 @@
        </collision>
    </link>
 
+   <joint name="leftClaw" type="fixed">
+    <parent link="palm"/>
+    <child link="leftc"/>
+    <origin xyz="0.0 -0.05 0.02" rpy="0.0 0.0 0.0"/>
+   </joint>
+
+   <joint name="rightClaw" type="fixed">
+    <parent link="palm"/>
+    <child link="rightc"/>
+    <origin xyz="0.0 0.05 0.02" rpy="0.0 0.0 0.0"/>
+   </joint>
+
    <joint name="hip" type="revolute">
        <axis xyz="0 0 1"/>
        <limit velocity="1.0" effort="30.0" upper="1.57" lower="-1.57"/>
@@ -187,16 +199,6 @@
        <origin rpy="0 0 0" xyz="0 0 0.27"/>
    </joint>
 
-   <joint name="leftClaw" type="fixed">
-    <parent link="palm"/>
-    <child link="leftc"/>
-    <origin xyz="0.0 -0.05 0.02" rpy="0.0 0.0 0.0"/>
-   </joint>
-
-   <joint name="rightClaw" type="fixed">
-    <parent link="palm"/>
-    <child link="rightc"/>
-    <origin xyz="0.0 0.05 0.02" rpy="0.0 0.0 0.0"/>
-   </joint>
+   
    
 </robot>
