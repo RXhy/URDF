@@ -1,0 +1,2 @@
+arm_controller:inisial:robot_description
+-DCATKIN_DEVEL_PREFIX=/home/roy/Documents/ROSCORE/URDF/devel -DCMAKE_INSTALL_PREFIX=/home/roy/Documents/ROSCORE/URDF/install -G Unix Makefiles

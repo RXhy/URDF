@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<robot name="robot_inisial">
+    <link name="world"/>
+
+    <link name="body">
+        <visual>
+           <geometry>
+               <cylinder length="0.5" radius="0.03"/>
+           </geometry>
+           <material name="silver">
+               <color rgba="1 0.3 0.2 1"/>
+           </material>
+           <origin rpy="0 0 0" xyz="0 0 0.25"/>
+       </visual>
+       <collision>
+           <geometry>
+               <cylinder length="0.5" radius="0.03"/>
+           </geometry>
+           <origin rpy="0 0 0" xyz="0 0 0.25"/>
+       </collision>
+    </link>
+
+    <joint name="fixed" type="fixed">
+       <parent link="world"/>
+       <child link="body"/>
+   </joint>
+
+    <link name="curve1">
+        <visual>
+           <geometry>
+               <cylinder length="0.25" radius="0.03"/>
+           </geometry>
+           <material name="silver">
+               <color rgba="1 0.3 0.2 1"/>
+           </material>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </visual>
+       <collision>
+           <geometry>
+               <cylinder length="0.25" radius="0.03"/>
+           </geometry>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </collision>
+    </link>
+
+    <joint name="turn" type="fixed">
+        <parent link="body"/>
+        <child link="curve1"/>
+        <origin xyz="0.125 0.0 0.47" rpy="0.0 1.57 0.0"/>
+    </joint>
+
+    <link name="diagonal">
+        <visual>
+           <geometry>
+               <cylinder length="0.345" radius="0.03"/>
+           </geometry>
+           <material name="silver">
+               <color rgba="1 0.3 0.2 1"/>
+           </material>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </visual>
+       <collision>
+           <geometry>
+               <cylinder length="0.345" radius="0.03"/>
+           </geometry>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </collision>
+    </link>
+    
+    <joint name="dig" type="fixed">
+        <parent link="body"/>
+        <child link="diagonal"/>
+        <origin xyz="0.125 0.0 0.13" rpy="0.0 2.35 0.0"/>
+    </joint> 
+
+    <link name="R1">
+        <visual>
+           <geometry>
+               <cylinder length="0.28" radius="0.03"/>
+           </geometry>
+           <material name="silver">
+               <color rgba="1 0.3 0.2 1"/>
+           </material>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </visual>
+       <collision>
+           <geometry>
+               <cylinder length="0.28" radius="0.03"/>
+           </geometry>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </collision>
+    </link>
+    
+    <joint name="re1" type="fixed">
+        <parent link="curve1"/>
+        <child link="R1"/>
+        <origin xyz="0.11 0.0 0.12" rpy="0.0 1.57 0.0"/>
+    </joint> 
+
+    <link name="R2">
+        <visual>
+           <geometry>
+               <cylinder length="0.25" radius="0.03"/>
+           </geometry>
+           <material name="silver">
+               <color rgba="1 0.3 0.2 1"/>
+           </material>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </visual>
+       <collision>
+           <geometry>
+               <cylinder length="0.25" radius="0.03"/>
+           </geometry>
+           <origin rpy="0 0 0" xyz="0 0 0"/>
+       </collision>
+    </link>
+    
+    <joint name="re2" type="fixed">
+        <parent link="body"/>
+        <child link="R2"/>
+        <origin xyz="0.125 0.0 0.25" rpy="0.0 1.57 0.0"/>
+    </joint> 
+
+
+</robot>
