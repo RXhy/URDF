@@ -18,7 +18,7 @@
    pkg="joint_state_publisher_gui"
    type="joint_state_publisher_gui" /> 
    -->
-  <!-- hipotesis (1) kejet kejet karena positionnya ke-double, bisa jadi gui sama join state tabrakan -->
+  <!-- hipotesis (1) kejet kejet karena positionnya ke-double atau overwriting, bisa jadi gui sama join state tabrakan -->
 
 
  <node
