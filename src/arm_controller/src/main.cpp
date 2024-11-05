@@ -1,6 +1,5 @@
 #include <ros/ros.h>
 #include <sensor_msgs/JointState.h>
-#include <geometry_msgs/Point.h>
 #include <vector>
 
 int main(int argc, char** argv) {

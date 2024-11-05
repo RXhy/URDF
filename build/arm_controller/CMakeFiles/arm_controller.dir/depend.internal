@@ -3,7 +3,6 @@
 
 arm_controller/CMakeFiles/arm_controller.dir/src/main.cpp.o
  /home/roy/Documents/ROSCORE/URDF/src/arm_controller/src/main.cpp
- /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h
