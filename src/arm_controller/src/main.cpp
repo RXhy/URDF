@@ -2,7 +2,6 @@
 #include <sensor_msgs/JointState.h>
 #include <geometry_msgs/Point.h>
 #include <vector>
-#include <math.h>
 
 int main(int argc, char** argv) {
     ros::init(argc, argv, "joint_state_publisher");
