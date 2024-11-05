@@ -1,8 +1,0 @@
-prefix=/home/roy/Documents/ROSCORE/URDF/install
-
-Name: arm_controller
-Description: Description of arm_controller
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
